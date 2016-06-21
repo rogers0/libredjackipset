@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+# Security Hardening
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+override_dh_install:
+	sed -i 's%#include <ipset%#include <libcorkipset%' debian/tmp/usr/include/ipset/*.h
+	dh_install
+
+%:
+	dh $@ --builddirectory=build
