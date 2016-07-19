@@ -2,6 +2,11 @@ libcorkipset (1.1.1+20150311-2) UNRELEASED; urgency=medium
 
   * debian/rules:
     - Remove "--builddirectory=build"
+  * debian/patches:
+    - Update 0001: Include all debian version as library version.
+    - Update 0004: Update test of python-cram according to libcork, although
+                   there's no cram unit test item now.
+    - Add 0009: Support CMake Threads.
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Wed, 20 Jul 2016 00:10:13 +0900
 

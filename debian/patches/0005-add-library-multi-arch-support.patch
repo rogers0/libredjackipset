@@ -5,24 +5,37 @@ Subject: add library multi-arch support
 Followed the instruction:
   https://wiki.debian.org/Multiarch/Implementation#CMake
 ---
- CMakeLists.txt         | 2 ++
+ CMakeLists.txt         | 8 ++++++--
  include/CMakeLists.txt | 2 +-
  src/ipset.pc.in        | 4 ++--
- 3 files changed, 5 insertions(+), 3 deletions(-)
+ 3 files changed, 9 insertions(+), 5 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 8787668..1bfddf5 100644
+index 8787668..e075911 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -78,6 +78,8 @@ if(NOT CMAKE_BUILD_TYPE)
-         FORCE)
- endif(NOT CMAKE_BUILD_TYPE)
+@@ -32,6 +32,8 @@ string(REGEX REPLACE "-dev.*" "-dev" BASE_VERSION "${VERSION}")
+ 
+ find_package(PkgConfig)
  
 +include(GNUInstallDirs)
 +
- set(CMAKE_INSTALL_LIBDIR lib CACHE STRING
-     "The base name of the installation directory for libraries")
+ #-----------------------------------------------------------------------
+ # Check for building on Tilera
+ # If the Tilera environment is installed, then $TILERA_ROOT is defined
+@@ -78,8 +80,10 @@ if(NOT CMAKE_BUILD_TYPE)
+         FORCE)
+ endif(NOT CMAKE_BUILD_TYPE)
  
+-set(CMAKE_INSTALL_LIBDIR lib CACHE STRING
+-    "The base name of the installation directory for libraries")
++if(NOT CMAKE_INSTALL_LIBDIR)
++    set(CMAKE_INSTALL_LIBDIR lib CACHE STRING
++        "The base name of the installation directory for libraries")
++endif(NOT CMAKE_INSTALL_LIBDIR)
+ 
+ if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
+     add_definitions(-Wall -Werror)
 diff --git a/include/CMakeLists.txt b/include/CMakeLists.txt
 index d1e4a7d..097b775 100644
 --- a/include/CMakeLists.txt
