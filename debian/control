@@ -1,12 +1,25 @@
 Source: libcorkipset
 Priority: optional
 Maintainer: Roger Shimizu <rogershimizu@gmail.com>
-Build-Depends: debhelper (>=9.20160403), check, pkg-config, cmake, python3-sphinx, libcork-dev (>=0.12.0)
+Build-Depends: debhelper (>=9.20160403), check, pkg-config, cmake, python3-sphinx, help2man, libcork-dev (>=0.12.0)
 Standards-Version: 3.9.8
 Section: libs
 Homepage: https://github.com/redjack/ipset
 Vcs-Git: https://github.com/rogers0/libcorkipset.git
 Vcs-Browser: https://github.com/rogers0/libcorkipset
+
+Package: libcorkipset-utils
+Architecture: any
+Multi-Arch: foreign
+Depends: libcorkipset1 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: C library to store sets/maps of IP address (utility files)
+ The ipset library provides C data types for storing sets of IP
+ addresses, and maps of IP addresses to integers.  It supports both
+ IPv4 and IPv6 addresses.  It's implemented using "Binary Decision
+ Diagrams" (BDDs, https://en.wikipedia.org/wiki/Binary_decision_diagram),
+ which (we hypothesize) makes it space efficient for large sets.
+ .
+ This package provides a few utility binaries for the library.
 
 Package: libcorkipset-dev
 Section: libdevel
@@ -21,7 +34,7 @@ Description: C library to store sets/maps of IP address (development files)
  Diagrams" (BDDs, https://en.wikipedia.org/wiki/Binary_decision_diagram),
  which (we hypothesize) makes it space efficient for large sets.
  .
- This package provides C header files for the libraries.
+ This package provides C header files for the library.
 
 Package: libcorkipset1
 Architecture: any
@@ -34,7 +47,7 @@ Description: C library to store sets/maps of IP address
  Diagrams" (BDDs, https://en.wikipedia.org/wiki/Binary_decision_diagram),
  which (we hypothesize) makes it space efficient for large sets.
  .
- This package provides shared libraries.
+ This package provides shared library.
 
 Package: libcorkipset-doc
 Section: doc
@@ -47,4 +60,4 @@ Description: C library to store sets/maps of IP address (documentation files)
  Diagrams" (BDDs, https://en.wikipedia.org/wiki/Binary_decision_diagram),
  which (we hypothesize) makes it space efficient for large sets.
  .
- This package provides documentation in HTML for the libraries.
+ This package provides documentation in HTML for the library.

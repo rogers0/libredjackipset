@@ -8,6 +8,12 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_install:
 	sed -i 's%#include <ipset%#include <libcorkipset%' debian/tmp/usr/include/ipset/*.h
+	cd obj-$(DEB_HOST_MULTIARCH); \
+	for bin in ipsetbuild ipsetcat ipsetdot; do \
+		help2man -N -n "utility of libcorkipset library" \
+			--version-string="$(shell dpkg-parsechangelog --show-field Version)" \
+			-o $$bin.1 src/$$bin; \
+	done
 	dh_install
 
 override_dh_installdocs:
