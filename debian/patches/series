@@ -7,3 +7,4 @@
 0007-checkout-sphinx-style-docs-CMakeLists.txt.patch
 0008-setup-docs-folder-and-make-index-works.patch
 0009-support-cmake-threads.patch
+0010-fix-typo-in-src-CMakeLists.txt.patch
