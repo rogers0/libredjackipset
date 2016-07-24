@@ -1,11 +1,11 @@
-libcorkipset (1.1.1+20150311-3) UNRELEASED; urgency=medium
+libcorkipset (1.1.1+20150311-3) unstable; urgency=medium
 
   * debian/rules:
     - Update build directory when generating manpages,
       from obj-${DEB_HOST_MULTIARCH} to obj-${DEB_TARGET_GNU_TYPE}.
       Fixing FTBFS on *i386 Arch.
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 24 Jul 2016 12:55:23 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 24 Jul 2016 20:28:03 +0900
 
 libcorkipset (1.1.1+20150311-2) unstable; urgency=medium
 
