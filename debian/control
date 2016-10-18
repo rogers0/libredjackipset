@@ -1,7 +1,14 @@
 Source: libcorkipset
 Priority: optional
 Maintainer: Roger Shimizu <rogershimizu@gmail.com>
-Build-Depends: debhelper (>=9.20160403), check, pkg-config, cmake, python3-sphinx, help2man, libcork-dev (>=0.12.0)
+Build-Depends:
+ check,
+ cmake,
+ debhelper (>= 10),
+ help2man,
+ libcork-dev (>=0.12.0),
+ pkg-config,
+ python3-sphinx
 Standards-Version: 3.9.8
 Section: libs
 Homepage: https://github.com/redjack/ipset
