@@ -1,10 +1,12 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ipset
-Upstream-Contact: Douglas Creager <douglas.creager@redjack.com>
+Upstream-Contact: Douglas Creager <dcreager@dcreager.net>
+                  John Zachary <jzachary@jzachary.net>
+                  Greg Virgin <greg.virgin@redjack.com>
 Source: https://github.com/redjack/ipset
 
 Files: *
-Copyright: 2009-2013 RedJack, LLC
+Copyright: 2009-2013, RedJack, LLC.
 License: BSD-3-clause
 
 Files: debian/*

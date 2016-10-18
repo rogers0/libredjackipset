@@ -1,3 +1,10 @@
+libcorkipset (1.1.1+20150311-4) UNRELEASED; urgency=medium
+
+  * debian/copyright:
+    - Update field: Upstream-Contact
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 18 Oct 2016 23:14:08 +0900
+
 libcorkipset (1.1.1+20150311-3) unstable; urgency=medium
 
   * debian/rules:
