@@ -1,4 +1,4 @@
-libcorkipset (1.1.1+20150311-4) UNRELEASED; urgency=medium
+libcorkipset (1.1.1+20150311-4) unstable; urgency=medium
 
   * debian/copyright:
     - Update field: Upstream-Contact
@@ -6,7 +6,7 @@ libcorkipset (1.1.1+20150311-4) UNRELEASED; urgency=medium
     - Bump debhelper level to 10 (previous was 9.20160403,
       feature equivalent to 10, so no change required).
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 18 Oct 2016 23:14:08 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Thu, 20 Oct 2016 00:35:09 +0900
 
 libcorkipset (1.1.1+20150311-3) unstable; urgency=medium
 
