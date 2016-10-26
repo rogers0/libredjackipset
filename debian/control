@@ -6,7 +6,7 @@ Build-Depends:
  cmake,
  debhelper (>= 10),
  help2man,
- libcork-dev (>=0.12.0),
+ libcork-dev (>= 0.15.0+ds-8),
  pkg-config,
  python3-sphinx
 Standards-Version: 3.9.8
@@ -59,7 +59,10 @@ Description: C library to store sets/maps of IP address
 Package: libcorkipset-doc
 Section: doc
 Architecture: all
-Depends: ${misc:Depends}
+Depends:
+ libjs-jquery,
+ libjs-underscore,
+ ${misc:Depends}
 Description: C library to store sets/maps of IP address (documentation files)
  The ipset library provides C data types for storing sets of IP
  addresses, and maps of IP addresses to integers.  It supports both

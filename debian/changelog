@@ -1,3 +1,11 @@
+libcorkipset (1.1.1+20150311-5) UNRELEASED; urgency=medium
+
+  * debian/control:
+    - make use of libjs-jquery and libjs-underscore in Debian archive,
+      and remove embedded .js libraries.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Wed, 26 Oct 2016 22:01:39 +0900
+
 libcorkipset (1.1.1+20150311-4) unstable; urgency=medium
 
   * debian/copyright:

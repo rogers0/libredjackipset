@@ -8,6 +8,10 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_install:
 	sed -i 's%#include <ipset%#include <libcorkipset%' debian/tmp/usr/include/ipset/*.h
+	sed -i "s%_static/jquery.js%file:///usr/share/javascript/jquery/jquery.min.js%; \
+		s%_static/underscore.js%file:///usr/share/javascript/underscore/underscore.min.js%" \
+		obj-*/docs/html/*.html
+	rm -f obj-*/docs/html/_static/jquery.js obj-*/docs/html/_static/underscore.js
 	cd obj-$(DEB_TARGET_GNU_TYPE); \
 	for bin in ipsetbuild ipsetcat ipsetdot; do \
 		help2man -N -n "utility of libcorkipset library" \
