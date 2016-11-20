@@ -1,3 +1,15 @@
+libcorkipset (1.1.1+20150311-6) UNRELEASED; urgency=medium
+
+  * debian/control:
+    - Make use of dh_sphinxdoc to calculate the dependency of js library
+    - Add Built-Using according to Bug#836248.
+  * debian/rules:
+    - Make use of dh_sphinxdoc to replace/remove libjs-sphinxdoc js
+      libraries.
+    - Remove .buildinfo from HTML doc folder
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 20 Nov 2016 22:03:25 +0900
+
 libcorkipset (1.1.1+20150311-5) unstable; urgency=medium
 
   * debian/control:
