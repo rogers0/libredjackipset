@@ -1,4 +1,4 @@
-libcorkipset (1.1.1+20150311-6) UNRELEASED; urgency=medium
+libcorkipset (1.1.1+20150311-6) unstable; urgency=medium
 
   * debian/control:
     - Make use of dh_sphinxdoc to calculate the dependency of js library
@@ -8,7 +8,7 @@ libcorkipset (1.1.1+20150311-6) UNRELEASED; urgency=medium
       libraries.
     - Remove .buildinfo from HTML doc folder
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 20 Nov 2016 22:03:25 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 22 Nov 2016 00:10:35 +0900
 
 libcorkipset (1.1.1+20150311-5) unstable; urgency=medium
 
