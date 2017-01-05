@@ -6,6 +6,8 @@ libcorkipset (1.1.1+20150311-7) UNRELEASED; urgency=medium
     - Remove Multi-Arch for package libcorkipset-utils
     - Set package libcorkipset-doc as "Multi-Arch: foreign"
       based on wiki: https://wiki.debian.org/MultiArch/Hints
+  * debian/copyright:
+    - Update copyright year.
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 06 Jan 2017 00:46:39 +0900
 

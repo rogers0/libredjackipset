@@ -10,7 +10,7 @@ Copyright: 2009-2013, RedJack, LLC.
 License: BSD-3-clause
 
 Files: debian/*
-Copyright: 2016 Roger Shimizu <rogershimizu@gmail.com>
+Copyright: 2017 Roger Shimizu <rogershimizu@gmail.com>
 License: GPL-2+
 
 Files: debian/patches/*
