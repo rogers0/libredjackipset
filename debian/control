@@ -17,7 +17,6 @@ Vcs-Browser: https://github.com/rogers0/libcorkipset
 
 Package: libcorkipset-utils
 Architecture: any
-Multi-Arch: foreign
 Depends: libcorkipset1 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: C library to store sets/maps of IP address (utility files)
  The ipset library provides C data types for storing sets of IP
@@ -59,6 +58,7 @@ Description: C library to store sets/maps of IP address
 Package: libcorkipset-doc
 Section: doc
 Architecture: all
+Multi-Arch: foreign
 Depends:
  ${misc:Depends},
  ${sphinxdoc:Depends}
