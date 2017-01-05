@@ -1,4 +1,4 @@
-libcorkipset (1.1.1+20150311-7) UNRELEASED; urgency=medium
+libcorkipset (1.1.1+20150311-7) unstable; urgency=medium
 
   * debian/rules:
     - Fix typo in script.
@@ -9,7 +9,7 @@ libcorkipset (1.1.1+20150311-7) UNRELEASED; urgency=medium
   * debian/copyright:
     - Update copyright year.
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 06 Jan 2017 00:46:39 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 06 Jan 2017 01:19:30 +0900
 
 libcorkipset (1.1.1+20150311-6) unstable; urgency=medium
 
