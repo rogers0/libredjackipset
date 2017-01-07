@@ -11,6 +11,12 @@ libcorkipset (1.1.1+20150311-7) unstable; urgency=medium
 
  -- Roger Shimizu <rogershimizu@gmail.com>  Fri, 06 Jan 2017 01:19:30 +0900
 
+libcorkipset (1.1.1+20150311-6~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Thu, 24 Nov 2016 01:12:17 +0900
+
 libcorkipset (1.1.1+20150311-6) unstable; urgency=medium
 
   * debian/control:
