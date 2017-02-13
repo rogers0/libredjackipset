@@ -4,7 +4,7 @@ Maintainer: Roger Shimizu <rogershimizu@gmail.com>
 Build-Depends:
  check,
  cmake,
- debhelper (>= 10),
+ debhelper (>= 9),
  help2man,
  libcork-dev (>= 0.15.0+ds-8),
  pkg-config,
