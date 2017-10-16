@@ -9,7 +9,7 @@ Build-Depends:
  libcork-dev (>= 0.15.0+ds-8),
  pkg-config,
  python3-sphinx
-Standards-Version: 3.9.8
+Standards-Version: 4.1.1
 Section: libs
 Homepage: https://github.com/redjack/ipset
 Vcs-Git: https://github.com/rogers0/libcorkipset.git
