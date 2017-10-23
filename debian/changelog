@@ -1,9 +1,10 @@
-libcorkipset (1.1.1+20150311-8~exp2) UNRELEASED; urgency=medium
+libcorkipset (1.1.1+20150311-8) unstable; urgency=medium
 
+  * Release to unstable.
   * debian/libcorkipset1.symbols:
     - Add symbols file for libcorkipset1.
 
- -- Roger Shimizu <rogershimizu@gmail.com>  Sun, 22 Oct 2017 17:49:57 +0900
+ -- Roger Shimizu <rogershimizu@gmail.com>  Tue, 24 Oct 2017 00:41:55 +0900
 
 libcorkipset (1.1.1+20150311-8~exp1) experimental; urgency=medium
 
